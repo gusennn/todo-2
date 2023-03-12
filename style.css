@@ -273,6 +273,7 @@ button {
     }
     .profile-data {
         width: 30%;
+        max-height: 609px;
     }
     .profile, .profile-track-list {
         flex-direction: column;
