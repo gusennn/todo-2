@@ -206,7 +206,6 @@ h2, span, p {
     color: #fff;
     font-size: 4em;
     gap: 10px;
-    text-transform: capitalize;
     border-radius: 5px;
     position: relative;
 }
