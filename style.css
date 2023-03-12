@@ -194,7 +194,7 @@ h2, span, p {
 }
 
 .doneItem {
-    border-left: 10px solid #3aa;
+    border-left: 20px solid #3aa;
 }
 
 .todoList .item {
@@ -204,6 +204,7 @@ h2, span, p {
     padding: 10px 10px 10px 30px;
     color: #fff;
     font-size: 4em;
+    gap: 10px;
     text-transform: capitalize;
     border-radius: 5px;
     position: relative;
@@ -235,10 +236,11 @@ h2, span, p {
 .todoList .item > div {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
 
 .item button {
+    font-size: 4em;
     border-radius: 5px;
     padding: 10px;
 }
@@ -263,12 +265,9 @@ button {
 }
 
 /* для телефонов */
-@media ( min-width: 576px) and ( max-width: 768px ){
+@media ( min-width: 576px){
     .bg-main {
-        align-items: flex-start;
-        padding: 15px;
-        height: 100%;
-        margin-bottom: 100px;
+
     }
     .tracks-wrapper {
         flex-direction: row;
@@ -283,10 +282,6 @@ button {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    .profile-style {
-        margin-right: 40px;
     }
 
     .profile-track-list {
