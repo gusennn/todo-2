@@ -201,8 +201,9 @@ h2, span, p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    padding: 10px 10px 10px 30px;
     color: #fff;
+    font-size: 4em;
     text-transform: capitalize;
     border-radius: 5px;
     position: relative;
