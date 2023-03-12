@@ -266,8 +266,26 @@ button {
 }
 
 @media (min-device-width: 768px) {
+    * {
+        font-size: 6px;
+    }
     .tracks-wrapper {
         flex-direction: row;
+    }
+    .profile-data {
+        width: 30%;
+    }
+    .profile, .profile-track-list {
+        flex-direction: column;
+    }
+    .person-name {
+        font-size: 4em;
+    }
+    .for-text {
+        font-size: 2em;
+    }
+    .profile-style img {
+        width: 15em;
     }
 }
 
