@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;600&display=swap');
+
+body {
+    margin-top: 50px;
+    margin-bottom: 90px;
+    background-color: #0d1323;
+}
+
+:root {
+    --main-color: #0d1323;
+    --second-color: #5746ea;
+    --text-color-gray: #5746ea;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 300;
+    transition: all .2s;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2, span, p {
+    cursor: default;
+}
+
+/* главные блоки */
+.bg-main {
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+}
+
+.tracks-wrapper {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    box-sizing: border-box;
+}
+
+
+/* Профиль. Первый блок */
+.profile-data {
+    background-color: #1d204b;
+    padding-bottom: 30px;
+}
+
+.profile {
+    padding: 30px;
+    background-color: #5746ea;
+    border-radius: 10px;
+    transition: .2s;
+}
+
+.profile:hover {
+    box-shadow: 0px 10px 1px #5746ea70;
+    transition: .2s;
+}
+
+.profile-style {
+    width: 66px;
+    height: 66px;
+    padding: 3px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.profile-style img {
+    width: 60px;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+.for-text {
+    display: block;
+    font-size: .7em;
+    opacity: 0.5;
+    margin-bottom: 10px;
+}
+
+.profile-name {
+    padding-bottom: 40px;
+}
+
+.profile-track-list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+.track-item {
+    color: #fff;
+}
+
+.profile-track-list a {
+    color: inherit;
+    display: block;
+    margin-top: 25px;
+    opacity: 0.7;
+    transition: .2s;
+    font-weight: bold;
+}
+
+.track-item a:focus {
+    outline: 0px;
+    opacity: 1;
+}
+
+/* Остальные трэки */
+.tracks {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+/* общее для трэков, включая профиль*/
+.track-standart {
+    color: #fff;
+    border-radius: 10px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.tracks h2 {
+    width: 100%;
+    color: #fff;
+}
+
+.formWrapper {
+    display: flex;
+    gap: 30px;
+}
+
+.formWrapper input {
+    width: 100%;
+    padding: 15px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: 0px;
+}
+
+.formWrapper input:focus {
+    background-color: #fff1;
+    color: #fff;
+}
+
+.formWrapper button {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: var(--second-color);
+    color: #fff;
+}
+
+.todoList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.doneItem {
+    border-left: 10px solid #3aa;
+}
+
+.todoList .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    color: #fff;
+    text-transform: capitalize;
+    border-radius: 5px;
+    position: relative;
+}
+
+.item:hover {
+    box-shadow: 0px -5px 1px #5746ea70;
+    transition: .2s;
+}
+
+.todoList .item:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--second-color);
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.todoList li:last-child {
+    border-bottom: none;
+}
+
+
+
+.todoList .item > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item button {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.item button:hover {
+    opacity: .8;
+}
+
+.doneBtn {
+    color: #fff;
+    background-color: #3aad;
+}
+
+.deleteBtn {
+    color: #000;
+    background-color: #eee;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+/* для телефонов */
+@media ( max-width: 760px) {
+    .bg-main {
+        align-items: flex-start;
+        padding: 15px;
+        height: 100%;
+        margin-bottom: 100px;
+    }
+
+    .profile-data {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .profile-style {
+        margin-right: 40px;
+    }
+
+    .profile-track-list {
+        flex-direction: row;
+        justify-content: space-around;
+        padding-left: 0;
+    }
+
+    .tracks-wrapper {
+        flex-wrap: wrap;
+    }
+}
