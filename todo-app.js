@@ -148,7 +148,7 @@
             let newArray = {
                 id: getId(todoArray),
                 name: formRender.cInput.value,
-                done: true
+                done: false
             }
 
             let itemRender = createTodoItem (newArray);
