@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Дела на месяц</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="todo-app.js" ></script>
+</head>
+<body>
+    <script>
+        document.addEventListener ('DOMContentLoaded', () => {
+            createTodoApp (document.getElementById('todo-app-month'), 'Дела на месяц', 'month-todo');
+        });
+    </script>
+    <div class="bg-main">
+        <div class="tracks-wrapper">
+            <div class="profile-data track-standart">
+                <div class="profile">
+                    <div class="profile-style">
+                        <img src="https://minusinsk.bezformata.com/content/image473357333.jpg" alt="profile image">
+                    </div>
+                    <div class="profile-name">
+                        <span class="for-text">Статистика дня</span>
+                        <h2 class="person-name">Апур Чапурович</h2>
+                    </div>
+                </div>
+                <ul class="profile-track-list">
+                    <li class="track-item"><a href="./daily-todo.html">День</a></li>
+                    <li class="track-item"><a href="./weekly-todo.html">Неделя</a></li>
+                    <li class="track-item"><a href="./monthly-todo.html">Месяц</a></li>
+                </ul>
+            </div>
+            <div class="tracks container" id="todo-app-month">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
