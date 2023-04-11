@@ -223,7 +223,7 @@ h2, span, p {
     left: 0;
     right: 0;
     background-color: var(--second-color);
-    border-radius: 5px;
+    border-radius: 0px 5px 5px 0px;
     z-index: -1;
 }
 
