@@ -83,7 +83,7 @@
                 item.remove ();
                 console.log (todoArray)
                 for (let i = 0; i < todoArray.length; i++) {
-                    if (todoArray[i].id == obj.id) { // условие
+                    if (todoArray[i].id == obj.id) { 
                         todoArray.splice (i, 1)
                     }
                 }
@@ -140,7 +140,6 @@
 
             e.preventDefault ();
 
-//       Проверка инпута
             if (!formRender.cInput.value) {
                 return;
             };
